@@ -22,7 +22,7 @@ angular.module('jeun')
 
       	  },
       	  footer: {
-      	  	template: 'footer here'
+      	  	templateUrl: 'app/components/footer/footer.html'
       	  }
       	}
       });
