@@ -2,7 +2,8 @@
 
 angular.module('jeun', [
 	'ui.router',
-	'ngMaterial'
+	'ngMaterial',
+	'welcome'
 ])
 .run(function(){
 	console.log('app started ' + new Date().getTime())

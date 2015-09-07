@@ -25,12 +25,6 @@ angular.module('jeun')
       	  	template: 'footer here'
       	  }
       	}
-      })
-      .state('welcome', {
-				parent: 'index',
-				url: '/',
-				templateUrl: 'app/welcome/welcome.html'
-			});
-
+      });
     $urlRouterProvider.otherwise('/');
   });
