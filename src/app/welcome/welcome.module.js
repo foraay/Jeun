@@ -5,7 +5,7 @@ angular.module('welcome', [])
 		$stateProvider
 			.state('welcome', {
 				templateUrl: 'app/welcome/welcome.html',
-				parent: 'root',
+				parent: 'overall',
 				url: '/'
 			});
 	});

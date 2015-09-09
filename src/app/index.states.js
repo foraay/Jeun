@@ -25,6 +25,11 @@ angular.module('jeun')
       	  	templateUrl: 'app/components/footer/footer.html'
       	  }
       	}
+      })
+      .state('overall', {
+      	parent: 'root',
+      	abstract: true,
+      	templateUrl: 'app/overall.html'
       });
     $urlRouterProvider.otherwise('/');
   });
