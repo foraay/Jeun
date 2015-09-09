@@ -7,7 +7,11 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 body{
-  background: rgb(231, 235, 239);
+  background: #ff6f00;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 
 [layout=row] {
@@ -29,8 +33,9 @@ body{
   }
 }
 
-md-toolbar.md-default-theme {
-  background-color: #ff6f00
+md-toolbar{
+  color: #ff6f00;
+  background: #fff
 }
 
 section.jumbotron {
@@ -66,6 +71,30 @@ md-toolbar md-menu > .md-button.md-icon-button {
 }
 md-sidenav {
   background-color: inherit !important;
+}
+.content-wrapper{
+  min-height: 100%;
+  
+}
+.content-wrapper, md-content, md-card{
+  color: #666
+}
+.avatar{
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  border-radius: 50%;
+  box-sizing: content-box;
+};
+.avatar-2x{
+  width: 80px;
+  height: 80px;
+}
+.avatar-3x{
+  width: 120px;
+  height: 120px;
 }
 
 /* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
