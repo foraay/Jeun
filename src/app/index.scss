@@ -80,7 +80,9 @@ md-sidenav {
   
 }
 .content-wrapper, md-content, md-card{
-  color: #666
+  color: #666;
+  width: 600px;
+  max-width: 100%
 }
 .avatar{
   width: 40px;
