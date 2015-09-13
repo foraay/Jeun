@@ -11,5 +11,7 @@ angular.module('users')
 				parent: 'overall',
 				url: '/login',
 				templateUrl: 'app/users/login.html',
+				controller: 'UsersCtrl',
+				controllerAs: 'usersCtrl'
 			})
 	});
