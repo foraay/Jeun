@@ -1,6 +1,7 @@
 <form role='form' ng-submit='usersCtrl.login()'>
 	<md-card  layout-padding  layout="column">
-		<md-subheader class="md-warn">Login</md-subheader>
+		<h5 class="md-warn">Login</h5>
+    <md-divider></md-divider>
     <md-input-container>
       <label>Email</label>
       <input ng-model="usersCtrl.loginFormData.email" type="email">
@@ -9,6 +10,10 @@
       <label>Password</label>
       <input ng-model="usersCtrl.loginFormData.password" type="password">
     </md-input-container>
-    <md-button class='md-primary md-actions md-fab'>login</md-button>
+    <div layout='row'>
+      <p></p>
+      <span flex></span>
+      <md-button class='md-warn md-raised md-actions'>login</md-button>
+    </div>
   </md-card>
 </form>
