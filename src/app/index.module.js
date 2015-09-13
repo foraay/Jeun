@@ -4,7 +4,8 @@ angular.module('jeun', [
 	'ui.router',
 	'ngMaterial',
 	'welcome',
-	'users'
+	'users',
+	'Home'
 ])
 .run(function($rootScope, $state){
 
@@ -25,11 +26,16 @@ angular.module('jeun', [
 	function checkSession(){
 		return $rootScope.isLoggedIn = (togo > 0);
 	}
-	$rootScope.$on('$stateChangeStart', function(event, toState){
+	$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
 		checkSession();
+		console.log('fired')
 		if(!$rootScope.isLoggedIn){
 			if(toState.name !== 'login'){
-				$state.go('welcome');
+				if(toState.name !== 'welcome'){
+					console.log(toState)
+					$state.go('welcome');
+				}
+				
 			}
 		}
 	});
